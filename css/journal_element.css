@@ -1,0 +1,60 @@
+article {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.article-header {
+    margin-bottom: 60px;
+}
+
+.article-header h1 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.article-header time {
+    font-size: 14px;
+}
+
+.TOC {
+    margin-bottom: 80px;
+}
+
+.TOC h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.TOC ol {
+    display: block;
+    margin: 0;
+    padding-left: 25px;
+}
+
+.TOC li {
+    display: list-item;
+    margin-bottom: 10px;
+}
+
+.TOC a {
+    color: #000;
+    text-decoration: none;
+}
+
+.TOC a:hover {
+    text-decoration: underline;
+}
+
+article section {
+    margin-bottom: 80px;
+}
+
+article section h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+article section p {
+    line-height: 1.6;
+}
