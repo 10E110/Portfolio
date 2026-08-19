@@ -96,6 +96,7 @@ header nav a:hover {
 }
 
 .work img {
+    aspect-ratio: 1/ 1;
     width: 100%;
     object-fit: cover;
     display: block;
@@ -117,7 +118,7 @@ footer {
     
     .work img {
         width: 100%;
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
         display: block;
     }
