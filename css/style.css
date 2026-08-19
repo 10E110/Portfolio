@@ -5,6 +5,18 @@
     font-family: DIN Condensed, sans-serif;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
 .loader {
     position: fixed;
     inset: 0;
