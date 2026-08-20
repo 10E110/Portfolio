@@ -1,0 +1,38 @@
+.works {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.works h1 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.works-element {
+    margin-top: 60px;
+}
+
+.works-element li {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #000;
+}
+
+.works-element li:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.works-element a {
+    color: #000;
+    text-decoration: none;
+}
+
+.works-element a:hover {
+    text-decoration: underline;
+}
+
+.date {
+    margin-left: auto;
+}

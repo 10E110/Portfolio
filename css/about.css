@@ -23,6 +23,13 @@
     gap: 20px;
 }
 
+.description a {
+    /* text-decoration: none; */
+    top: 20px;
+    color: grey;
+
+}
+
 @media (max-width: 768px) {
     .about {
             width: 90%;

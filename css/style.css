@@ -80,6 +80,7 @@ header {
 
 header a {
     color: #000;
+    letter-spacing: 0.05em;
 }
 
 .logo {
