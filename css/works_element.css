@@ -1,0 +1,43 @@
+.work {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.work-header {
+    margin-bottom: 60px;
+}
+
+.work-header h1 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.work-header time {
+    font-size: 14px;
+}
+
+.work-media {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.work-media img,
+.work-media video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.work section {
+    margin-bottom: 60px;
+}
+
+.work section h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.work section p {
+    line-height: 1.6;
+}
