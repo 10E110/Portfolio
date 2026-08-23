@@ -5,6 +5,9 @@
     font-family: Helvetica, Arial, sans-serif, condensed;
 }
 
+html, body {
+    scrollbar-width: none;
+}
 body {
     min-height: 100vh;
     display: flex;
@@ -32,6 +35,7 @@ main {
 .loader p {
     animation: loaderFadeText 3.0s ease forwards;
     font-size: 30px;
+    letter-spacing: 0.05em;
 }
 
 @keyframes loaderFadeBackground {
@@ -70,7 +74,7 @@ main {
     }
 }
 
-header {
+.index-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +82,7 @@ header {
     color: #000;
 }
 
-header a {
+.index-header a {
     color: #000;
     letter-spacing: 0.05em;
 }
@@ -92,50 +96,62 @@ nav {
     gap: 32px;
 }
 
-header nav a {
+.index-header nav a {
     text-decoration: none;
+    display: inline-block;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+.index-header nav a::after {
+    content: "";
     color: #000;
-}
-
-.works-preview {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 40px;
-}
-
-.work img {
-    aspect-ratio: 1/ 1;
-    width: 100%;
-    object-fit: cover;
+    transition: width 0.3s ease;
     display: block;
+    width: 0;
+    border-bottom: 1px solid black;
+}
+
+.index-header nav a:hover::after{
+    width: 100%;
 }
 
 footer {
     padding: 40px;
     margin-top: 40px;
 }
+.photo-gallery {
+    columns: 3;
+    column-gap: 20px;
+    padding: 40px;
+}
 
+.photo-gallery a img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
 @media (max-width: 768px) {
-    header {
+    .index-header {
         padding: 20px;
     }
 
     nav {
         gap: 20px;
     }
-    
-    .work img {
+
+    .loader p {
+        font-size: 15px;
+        padding: 50px;
+    }
+
+    .photo-gallery a img {
         width: 100%;
-        aspect-ratio: 1 / 1;
+        /* aspect-ratio: 1 / 1; */
         object-fit: cover;
         display: block;
     }
-    .works-preview {
+    .photo-gallery {
+        columns: 1;
         grid-template-columns: 1fr;
         gap: 15px;
         padding: 20px;
