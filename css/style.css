@@ -75,11 +75,14 @@ main {
 }
 
 .index-header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px 40px;
     color: #000;
+    background-color: white;
 }
 
 .index-header a {
