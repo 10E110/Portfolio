@@ -31,13 +31,13 @@ main {
     background: white;
     z-index: 9999;
     animation: loaderFadeBackground 4.0s ease forwards;
-    
-}
 
-.loader p {
-    animation: loaderFadeText 3.0s ease forwards;
-    font-size: 30px;
-    letter-spacing: 0.05em;
+    p {
+        animation: loaderFadeText 3.0s ease forwards;
+        font-size: 30px;
+        letter-spacing: 0.05em; 
+    }
+    
 }
 
 @keyframes loaderFadeBackground {
@@ -85,56 +85,58 @@ main {
     padding: 24px 40px;
     color: #000;
     background-color: white;
+
+    a {
+        color: #000;
+        letter-spacing: 0.05em;
+    }
+
+    .logo {
+        text-decoration: none;
+    }
+    
+    nav {
+        display: flex;
+        gap: 32px;
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a::after {
+            content: "";
+            color: #000;
+            transition: width 0.3s ease;
+            display: block;
+            width: 0;
+            border-bottom: 1px solid black;
+        }
+
+        a:hover::after{
+            width: 100%;
+        }
+    }
 }
 
-.index-header a {
-    color: #000;
-    letter-spacing: 0.05em;
-}
+.photo-gallery {
+    columns: 3;
+    column-gap: 20px;
+    padding: 40px;
 
-.logo {
-    text-decoration: none;
-}
-
-nav {
-    display: flex;
-    gap: 32px;
-}
-
-.index-header nav a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.index-header nav a::after {
-    content: "";
-    color: #000;
-    transition: width 0.3s ease;
-    display: block;
-    width: 0;
-    border-bottom: 1px solid black;
-}
-
-.index-header nav a:hover::after{
-    width: 100%;
+    img {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        break-inside: avoid;
+    }
 }
 
 footer {
     padding: 40px;
     margin-top: 40px;
 }
-.photo-gallery {
-    columns: 3;
-    column-gap: 20px;
-    padding: 40px;
-}
 
-.photo-gallery a img {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-    break-inside: avoid;
-}
 @media (max-width: 768px) {
     .index-header {
         padding: 20px;
@@ -149,17 +151,19 @@ footer {
         padding: 50px;
     }
 
-    .photo-gallery a img {
-        width: 100%;
-        /* aspect-ratio: 1 / 1; */
-        object-fit: cover;
-        display: block;
-    }
+
     .photo-gallery {
         columns: 1;
         grid-template-columns: 1fr;
         gap: 15px;
         padding: 20px;
+
+        img {
+            width: 100%;
+            /* aspect-ratio: 1 / 1; */
+            object-fit: cover;
+            display: block;
+        }
     }
 
     footer {

@@ -6,41 +6,41 @@
 
 .work-header {
     margin-bottom: 60px;
-}
 
-.work-header h1 {
-    font-weight: normal;
-    margin-bottom: 10px;
-}
+    h1 {
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
 
-.work-header time {
-    font-size: 14px;
-}
+    time {
+        font-size: 14px;
+    }
 
-.work-media {
-    width: 100%;
-    margin-bottom: 80px;
 }
 
 .work-media img,
 .work-media video {
-    display: block;
     width: 100%;
+    margin-bottom: 80px;
+    display: block;
+  
     height: auto;
 }
 
 .work section {
     margin-bottom: 60px;
+
+    h2 {
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
 }
 
-.work section h2 {
-    font-weight: normal;
-    margin-bottom: 20px;
-}
-
-.work section p {
-    line-height: 1.6;
-}
 
 @media (max-width: 768px) {
     .work-media img,

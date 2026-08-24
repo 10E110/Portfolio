@@ -10,13 +10,14 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 60px;
+
+    h1 {
+        text-align: right;
+        margin: 0;
+        font-weight: normal;
+    }
 }
 
-.about-item h1 {
-    text-align: right;
-    margin: 0;
-    font-weight: normal;
-}
 
 .description {
     text-align: left;
@@ -25,14 +26,14 @@
     p {
         line-height: 1.25;
     }
+
+    a {
+        /* text-decoration: none; */
+        top: 20px;
+        color: grey;
+    }
 }
 
-.description a {
-    /* text-decoration: none; */
-    top: 20px;
-    color: grey;
-
-}
 
 @media (max-width: 768px) {
     .about {
