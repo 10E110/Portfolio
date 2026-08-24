@@ -4,4 +4,4 @@ dist/
 resources/
 *.mp4
 *.mov
-*.JPG
+# *.JPG
