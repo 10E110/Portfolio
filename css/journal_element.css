@@ -52,8 +52,6 @@ article {
         color: darkgray;
     }
 
-    a.anchor
-
 }
 
 
@@ -71,5 +69,12 @@ article section {
         letter-spacing: 0.02em;
     }
 
-}
+    img {
+        margin: 0;
+        object-fit: cover;
+        width: 100%;
+        max-width: 1000px;
+        aspect-ratio: 10/7;
+    }
 
+}
