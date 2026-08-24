@@ -42,6 +42,15 @@
         letter-spacing: 0.02em;
     }
 
+    ol {
+        padding-left: 20px;
+        line-height: 1cm;
+ 
+        li {
+            letter-spacing: 0.05;
+            font-size: 20px;
+        }
+    }
 }
 
 
