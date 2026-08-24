@@ -48,7 +48,8 @@ article {
 }
 
 .TOC a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: darkgray;
 }
 
 article section {

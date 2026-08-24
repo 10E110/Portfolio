@@ -21,6 +21,10 @@
 .description {
     text-align: left;
     gap: 20px;
+
+    p {
+        line-height: 1.25;
+    }
 }
 
 .description a {

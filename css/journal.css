@@ -30,7 +30,9 @@
 }
 
 .journal-element a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: darkgray;
+    
 }
 
 .date {
