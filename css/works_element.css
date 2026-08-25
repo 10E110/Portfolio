@@ -20,13 +20,12 @@
 
 .work-media {
     img, video, iframe {
-        width: 100%;
-        max-height: 700;
         display: block;
         margin-bottom: 50px;
         object-fit: cover;
         max-width: 1000px;
         aspect-ratio: 16/9;
+        height: 100%;
     }
 }
 
